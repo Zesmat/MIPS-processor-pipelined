@@ -1,0 +1,821 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="Z:/Processor/MIPS_pipelined_test_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="comp" />
+            <top_module name="mips_pipelined_test" />
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_unsigned" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="53" />
+   <wvobject fp_name="/mips_pipelined_test/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_pipelined_test/reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_pipelined_test/input" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">input[31:0]</obj_property>
+      <obj_property name="ObjectShortName">input[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_pipelined_test/output" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">output[31:0]</obj_property>
+      <obj_property name="ObjectShortName">output[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_pipelined_test/clk_period" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_period</obj_property>
+      <obj_property name="ObjectShortName">clk_period</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_pipelined_test/uut/IF_stage/PC_Reg/data" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">data[3:0]</obj_property>
+      <obj_property name="ObjectShortName">data[3:0]</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#aaff00</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="label">pc_data[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_pipelined_test/uut/if_instruction" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">if_instruction[31:0]</obj_property>
+      <obj_property name="ObjectShortName">if_instruction[31:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#00ffff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_pipelined_test/uut/if_pc_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">if_pc_out[3:0]</obj_property>
+      <obj_property name="ObjectShortName">if_pc_out[3:0]</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#00ffff</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_pipelined_test/uut/id_memtoreg" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">id_memtoreg</obj_property>
+      <obj_property name="ObjectShortName">id_memtoreg</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff00ff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_pipelined_test/uut/id_regwrite" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">id_regwrite</obj_property>
+      <obj_property name="ObjectShortName">id_regwrite</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff00ff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_pipelined_test/uut/id_input_flag" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">id_input_flag</obj_property>
+      <obj_property name="ObjectShortName">id_input_flag</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff00ff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_pipelined_test/uut/id_output_flag" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">id_output_flag</obj_property>
+      <obj_property name="ObjectShortName">id_output_flag</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff00ff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_pipelined_test/uut/id_branch" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">id_branch</obj_property>
+      <obj_property name="ObjectShortName">id_branch</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff00ff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_pipelined_test/uut/id_jump" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">id_jump</obj_property>
+      <obj_property name="ObjectShortName">id_jump</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff00ff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_pipelined_test/uut/id_jump_target" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">id_jump_target[3:0]</obj_property>
+      <obj_property name="ObjectShortName">id_jump_target[3:0]</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff00ff</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_pipelined_test/uut/id_memread" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">id_memread</obj_property>
+      <obj_property name="ObjectShortName">id_memread</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff00ff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_pipelined_test/uut/id_memwrite" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">id_memwrite</obj_property>
+      <obj_property name="ObjectShortName">id_memwrite</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff00ff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_pipelined_test/uut/id_alusrc" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">id_alusrc</obj_property>
+      <obj_property name="ObjectShortName">id_alusrc</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff00ff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_pipelined_test/uut/id_aluop" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">id_aluop[2:0]</obj_property>
+      <obj_property name="ObjectShortName">id_aluop[2:0]</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff00ff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_pipelined_test/uut/id_funct" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">id_funct[5:0]</obj_property>
+      <obj_property name="ObjectShortName">id_funct[5:0]</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff00ff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_pipelined_test/uut/id_rd_data1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">id_rd_data1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">id_rd_data1[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff00ff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_pipelined_test/uut/id_rd_data2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">id_rd_data2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">id_rd_data2[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff00ff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_pipelined_test/uut/id_sign_ext_imm" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">id_sign_ext_imm[31:0]</obj_property>
+      <obj_property name="ObjectShortName">id_sign_ext_imm[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff00ff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_pipelined_test/uut/id_pc_incremented_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">id_pc_incremented_out[3:0]</obj_property>
+      <obj_property name="ObjectShortName">id_pc_incremented_out[3:0]</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff00ff</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_pipelined_test/uut/id_wrt_reg_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">id_wrt_reg_out[4:0]</obj_property>
+      <obj_property name="ObjectShortName">id_wrt_reg_out[4:0]</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff00ff</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_pipelined_test/uut/ex_alu_result" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ex_alu_result[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ex_alu_result[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#a0a0a4</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_pipelined_test/uut/ex_zero_flag" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ex_zero_flag</obj_property>
+      <obj_property name="ObjectShortName">ex_zero_flag</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#a0a0a4</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_pipelined_test/uut/ex_rd_data2_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ex_rd_data2_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ex_rd_data2_out[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#a0a0a4</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_pipelined_test/uut/ex_branch_target" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ex_branch_target[3:0]</obj_property>
+      <obj_property name="ObjectShortName">ex_branch_target[3:0]</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#a0a0a4</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_pipelined_test/uut/ex_branch_out" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ex_branch_out</obj_property>
+      <obj_property name="ObjectShortName">ex_branch_out</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#a0a0a4</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_pipelined_test/uut/ex_memread_out" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ex_memread_out</obj_property>
+      <obj_property name="ObjectShortName">ex_memread_out</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#a0a0a4</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_pipelined_test/uut/ex_memwrite_out" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ex_memwrite_out</obj_property>
+      <obj_property name="ObjectShortName">ex_memwrite_out</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#a0a0a4</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_pipelined_test/uut/ex_regwrite_out" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ex_regwrite_out</obj_property>
+      <obj_property name="ObjectShortName">ex_regwrite_out</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#a0a0a4</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_pipelined_test/uut/ex_input_flag" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ex_input_flag</obj_property>
+      <obj_property name="ObjectShortName">ex_input_flag</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#808080</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_pipelined_test/uut/ex_output_flag" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ex_output_flag</obj_property>
+      <obj_property name="ObjectShortName">ex_output_flag</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#808080</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_pipelined_test/uut/ex_memtoreg_out" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ex_memtoreg_out</obj_property>
+      <obj_property name="ObjectShortName">ex_memtoreg_out</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#a0a0a4</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_pipelined_test/uut/ex_wrt_reg_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ex_wrt_reg_out[4:0]</obj_property>
+      <obj_property name="ObjectShortName">ex_wrt_reg_out[4:0]</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#a0a0a4</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_pipelined_test/uut/mem_mem_data_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">mem_mem_data_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">mem_mem_data_out[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#008080</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_pipelined_test/uut/mem_alu_result_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">mem_alu_result_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">mem_alu_result_out[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#008080</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_pipelined_test/uut/mem_wrt_reg_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">mem_wrt_reg_out[4:0]</obj_property>
+      <obj_property name="ObjectShortName">mem_wrt_reg_out[4:0]</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#008080</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_pipelined_test/uut/mem_rd_data2_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">mem_rd_data2_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">mem_rd_data2_out[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_pipelined_test/uut/mem_memtoreg_out" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">mem_memtoreg_out</obj_property>
+      <obj_property name="ObjectShortName">mem_memtoreg_out</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#008080</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_pipelined_test/uut/mem_regwrite_out" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">mem_regwrite_out</obj_property>
+      <obj_property name="ObjectShortName">mem_regwrite_out</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#008080</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_pipelined_test/uut/mem_input_flag" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">mem_input_flag</obj_property>
+      <obj_property name="ObjectShortName">mem_input_flag</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#008080</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_pipelined_test/uut/mem_output_flag" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">mem_output_flag</obj_property>
+      <obj_property name="ObjectShortName">mem_output_flag</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#008080</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_pipelined_test/uut/mem_branch_out" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">mem_branch_out</obj_property>
+      <obj_property name="ObjectShortName">mem_branch_out</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#008080</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_pipelined_test/uut/wb_wrt_data_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">wb_wrt_data_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">wb_wrt_data_out[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ffffff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_pipelined_test/uut/wb_wrt_reg_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">wb_wrt_reg_out[4:0]</obj_property>
+      <obj_property name="ObjectShortName">wb_wrt_reg_out[4:0]</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ffffff</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_pipelined_test/uut/wb_regwrite_out" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">wb_regwrite_out</obj_property>
+      <obj_property name="ObjectShortName">wb_regwrite_out</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ffffff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_pipelined_test/uut/pcsrc" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">pcsrc</obj_property>
+      <obj_property name="ObjectShortName">pcsrc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_pipelined_test/uut/ID_stage/Register_File_inst/array_reg" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">array_reg[0:31]</obj_property>
+      <obj_property name="ObjectShortName">array_reg[0:31]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <wvobject fp_name="/mips_pipelined_test/uut/ID_stage/Register_File_inst/array_reg[0]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[0]</obj_property>
+         <obj_property name="ObjectShortName">array_reg[0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mips_pipelined_test/uut/ID_stage/Register_File_inst/array_reg[1]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[1]</obj_property>
+         <obj_property name="ObjectShortName">array_reg[1]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mips_pipelined_test/uut/ID_stage/Register_File_inst/array_reg[2]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[2]</obj_property>
+         <obj_property name="ObjectShortName">array_reg[2]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mips_pipelined_test/uut/ID_stage/Register_File_inst/array_reg[3]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[3]</obj_property>
+         <obj_property name="ObjectShortName">array_reg[3]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mips_pipelined_test/uut/ID_stage/Register_File_inst/array_reg[4]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[4]</obj_property>
+         <obj_property name="ObjectShortName">array_reg[4]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mips_pipelined_test/uut/ID_stage/Register_File_inst/array_reg[5]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[5]</obj_property>
+         <obj_property name="ObjectShortName">array_reg[5]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mips_pipelined_test/uut/ID_stage/Register_File_inst/array_reg[6]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[6]</obj_property>
+         <obj_property name="ObjectShortName">array_reg[6]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mips_pipelined_test/uut/ID_stage/Register_File_inst/array_reg[7]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[7]</obj_property>
+         <obj_property name="ObjectShortName">array_reg[7]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mips_pipelined_test/uut/ID_stage/Register_File_inst/array_reg[8]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[8]</obj_property>
+         <obj_property name="ObjectShortName">array_reg[8]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mips_pipelined_test/uut/ID_stage/Register_File_inst/array_reg[9]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[9]</obj_property>
+         <obj_property name="ObjectShortName">array_reg[9]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mips_pipelined_test/uut/ID_stage/Register_File_inst/array_reg[10]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[10]</obj_property>
+         <obj_property name="ObjectShortName">array_reg[10]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mips_pipelined_test/uut/ID_stage/Register_File_inst/array_reg[11]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[11]</obj_property>
+         <obj_property name="ObjectShortName">array_reg[11]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mips_pipelined_test/uut/ID_stage/Register_File_inst/array_reg[12]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[12]</obj_property>
+         <obj_property name="ObjectShortName">array_reg[12]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mips_pipelined_test/uut/ID_stage/Register_File_inst/array_reg[13]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[13]</obj_property>
+         <obj_property name="ObjectShortName">array_reg[13]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mips_pipelined_test/uut/ID_stage/Register_File_inst/array_reg[14]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[14]</obj_property>
+         <obj_property name="ObjectShortName">array_reg[14]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mips_pipelined_test/uut/ID_stage/Register_File_inst/array_reg[15]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[15]</obj_property>
+         <obj_property name="ObjectShortName">array_reg[15]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mips_pipelined_test/uut/ID_stage/Register_File_inst/array_reg[16]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[16]</obj_property>
+         <obj_property name="ObjectShortName">array_reg[16]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mips_pipelined_test/uut/ID_stage/Register_File_inst/array_reg[17]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[17]</obj_property>
+         <obj_property name="ObjectShortName">array_reg[17]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mips_pipelined_test/uut/ID_stage/Register_File_inst/array_reg[18]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[18]</obj_property>
+         <obj_property name="ObjectShortName">array_reg[18]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mips_pipelined_test/uut/ID_stage/Register_File_inst/array_reg[19]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[19]</obj_property>
+         <obj_property name="ObjectShortName">array_reg[19]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mips_pipelined_test/uut/ID_stage/Register_File_inst/array_reg[20]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[20]</obj_property>
+         <obj_property name="ObjectShortName">array_reg[20]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mips_pipelined_test/uut/ID_stage/Register_File_inst/array_reg[21]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[21]</obj_property>
+         <obj_property name="ObjectShortName">array_reg[21]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mips_pipelined_test/uut/ID_stage/Register_File_inst/array_reg[22]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[22]</obj_property>
+         <obj_property name="ObjectShortName">array_reg[22]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mips_pipelined_test/uut/ID_stage/Register_File_inst/array_reg[23]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[23]</obj_property>
+         <obj_property name="ObjectShortName">array_reg[23]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mips_pipelined_test/uut/ID_stage/Register_File_inst/array_reg[24]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[24]</obj_property>
+         <obj_property name="ObjectShortName">array_reg[24]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mips_pipelined_test/uut/ID_stage/Register_File_inst/array_reg[25]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[25]</obj_property>
+         <obj_property name="ObjectShortName">array_reg[25]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mips_pipelined_test/uut/ID_stage/Register_File_inst/array_reg[26]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[26]</obj_property>
+         <obj_property name="ObjectShortName">array_reg[26]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mips_pipelined_test/uut/ID_stage/Register_File_inst/array_reg[27]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[27]</obj_property>
+         <obj_property name="ObjectShortName">array_reg[27]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mips_pipelined_test/uut/ID_stage/Register_File_inst/array_reg[28]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[28]</obj_property>
+         <obj_property name="ObjectShortName">array_reg[28]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mips_pipelined_test/uut/ID_stage/Register_File_inst/array_reg[29]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[29]</obj_property>
+         <obj_property name="ObjectShortName">array_reg[29]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mips_pipelined_test/uut/ID_stage/Register_File_inst/array_reg[30]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[30]</obj_property>
+         <obj_property name="ObjectShortName">array_reg[30]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mips_pipelined_test/uut/ID_stage/Register_File_inst/array_reg[31]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[31]</obj_property>
+         <obj_property name="ObjectShortName">array_reg[31]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/mips_pipelined_test/uut/MEM_stage/data_mem_inst/data_memory" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">data_memory[0:63]</obj_property>
+      <obj_property name="ObjectShortName">data_memory[0:63]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <wvobject fp_name="/mips_pipelined_test/uut/MEM_stage/data_mem_inst/data_memory[0]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[0]</obj_property>
+         <obj_property name="ObjectShortName">data_memory[0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mips_pipelined_test/uut/MEM_stage/data_mem_inst/data_memory[1]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[1]</obj_property>
+         <obj_property name="ObjectShortName">data_memory[1]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mips_pipelined_test/uut/MEM_stage/data_mem_inst/data_memory[2]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[2]</obj_property>
+         <obj_property name="ObjectShortName">data_memory[2]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mips_pipelined_test/uut/MEM_stage/data_mem_inst/data_memory[3]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[3]</obj_property>
+         <obj_property name="ObjectShortName">data_memory[3]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mips_pipelined_test/uut/MEM_stage/data_mem_inst/data_memory[4]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[4]</obj_property>
+         <obj_property name="ObjectShortName">data_memory[4]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mips_pipelined_test/uut/MEM_stage/data_mem_inst/data_memory[5]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[5]</obj_property>
+         <obj_property name="ObjectShortName">data_memory[5]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mips_pipelined_test/uut/MEM_stage/data_mem_inst/data_memory[6]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[6]</obj_property>
+         <obj_property name="ObjectShortName">data_memory[6]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mips_pipelined_test/uut/MEM_stage/data_mem_inst/data_memory[7]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[7]</obj_property>
+         <obj_property name="ObjectShortName">data_memory[7]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mips_pipelined_test/uut/MEM_stage/data_mem_inst/data_memory[8]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[8]</obj_property>
+         <obj_property name="ObjectShortName">data_memory[8]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mips_pipelined_test/uut/MEM_stage/data_mem_inst/data_memory[9]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[9]</obj_property>
+         <obj_property name="ObjectShortName">data_memory[9]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mips_pipelined_test/uut/MEM_stage/data_mem_inst/data_memory[10]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[10]</obj_property>
+         <obj_property name="ObjectShortName">data_memory[10]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mips_pipelined_test/uut/MEM_stage/data_mem_inst/data_memory[11]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[11]</obj_property>
+         <obj_property name="ObjectShortName">data_memory[11]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mips_pipelined_test/uut/MEM_stage/data_mem_inst/data_memory[12]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[12]</obj_property>
+         <obj_property name="ObjectShortName">data_memory[12]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mips_pipelined_test/uut/MEM_stage/data_mem_inst/data_memory[13]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[13]</obj_property>
+         <obj_property name="ObjectShortName">data_memory[13]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mips_pipelined_test/uut/MEM_stage/data_mem_inst/data_memory[14]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[14]</obj_property>
+         <obj_property name="ObjectShortName">data_memory[14]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mips_pipelined_test/uut/MEM_stage/data_mem_inst/data_memory[15]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[15]</obj_property>
+         <obj_property name="ObjectShortName">data_memory[15]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mips_pipelined_test/uut/MEM_stage/data_mem_inst/data_memory[16]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[16]</obj_property>
+         <obj_property name="ObjectShortName">data_memory[16]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mips_pipelined_test/uut/MEM_stage/data_mem_inst/data_memory[17]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[17]</obj_property>
+         <obj_property name="ObjectShortName">data_memory[17]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mips_pipelined_test/uut/MEM_stage/data_mem_inst/data_memory[18]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[18]</obj_property>
+         <obj_property name="ObjectShortName">data_memory[18]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mips_pipelined_test/uut/MEM_stage/data_mem_inst/data_memory[19]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[19]</obj_property>
+         <obj_property name="ObjectShortName">data_memory[19]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mips_pipelined_test/uut/MEM_stage/data_mem_inst/data_memory[20]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[20]</obj_property>
+         <obj_property name="ObjectShortName">data_memory[20]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mips_pipelined_test/uut/MEM_stage/data_mem_inst/data_memory[21]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[21]</obj_property>
+         <obj_property name="ObjectShortName">data_memory[21]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mips_pipelined_test/uut/MEM_stage/data_mem_inst/data_memory[22]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[22]</obj_property>
+         <obj_property name="ObjectShortName">data_memory[22]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mips_pipelined_test/uut/MEM_stage/data_mem_inst/data_memory[23]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[23]</obj_property>
+         <obj_property name="ObjectShortName">data_memory[23]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mips_pipelined_test/uut/MEM_stage/data_mem_inst/data_memory[24]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[24]</obj_property>
+         <obj_property name="ObjectShortName">data_memory[24]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mips_pipelined_test/uut/MEM_stage/data_mem_inst/data_memory[25]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[25]</obj_property>
+         <obj_property name="ObjectShortName">data_memory[25]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mips_pipelined_test/uut/MEM_stage/data_mem_inst/data_memory[26]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[26]</obj_property>
+         <obj_property name="ObjectShortName">data_memory[26]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mips_pipelined_test/uut/MEM_stage/data_mem_inst/data_memory[27]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[27]</obj_property>
+         <obj_property name="ObjectShortName">data_memory[27]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mips_pipelined_test/uut/MEM_stage/data_mem_inst/data_memory[28]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[28]</obj_property>
+         <obj_property name="ObjectShortName">data_memory[28]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mips_pipelined_test/uut/MEM_stage/data_mem_inst/data_memory[29]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[29]</obj_property>
+         <obj_property name="ObjectShortName">data_memory[29]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mips_pipelined_test/uut/MEM_stage/data_mem_inst/data_memory[30]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[30]</obj_property>
+         <obj_property name="ObjectShortName">data_memory[30]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mips_pipelined_test/uut/MEM_stage/data_mem_inst/data_memory[31]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[31]</obj_property>
+         <obj_property name="ObjectShortName">data_memory[31]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mips_pipelined_test/uut/MEM_stage/data_mem_inst/data_memory[32]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[32]</obj_property>
+         <obj_property name="ObjectShortName">data_memory[32]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mips_pipelined_test/uut/MEM_stage/data_mem_inst/data_memory[33]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[33]</obj_property>
+         <obj_property name="ObjectShortName">data_memory[33]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mips_pipelined_test/uut/MEM_stage/data_mem_inst/data_memory[34]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[34]</obj_property>
+         <obj_property name="ObjectShortName">data_memory[34]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mips_pipelined_test/uut/MEM_stage/data_mem_inst/data_memory[35]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[35]</obj_property>
+         <obj_property name="ObjectShortName">data_memory[35]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mips_pipelined_test/uut/MEM_stage/data_mem_inst/data_memory[36]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[36]</obj_property>
+         <obj_property name="ObjectShortName">data_memory[36]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mips_pipelined_test/uut/MEM_stage/data_mem_inst/data_memory[37]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[37]</obj_property>
+         <obj_property name="ObjectShortName">data_memory[37]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mips_pipelined_test/uut/MEM_stage/data_mem_inst/data_memory[38]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[38]</obj_property>
+         <obj_property name="ObjectShortName">data_memory[38]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mips_pipelined_test/uut/MEM_stage/data_mem_inst/data_memory[39]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[39]</obj_property>
+         <obj_property name="ObjectShortName">data_memory[39]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mips_pipelined_test/uut/MEM_stage/data_mem_inst/data_memory[40]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[40]</obj_property>
+         <obj_property name="ObjectShortName">data_memory[40]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mips_pipelined_test/uut/MEM_stage/data_mem_inst/data_memory[41]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[41]</obj_property>
+         <obj_property name="ObjectShortName">data_memory[41]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mips_pipelined_test/uut/MEM_stage/data_mem_inst/data_memory[42]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[42]</obj_property>
+         <obj_property name="ObjectShortName">data_memory[42]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mips_pipelined_test/uut/MEM_stage/data_mem_inst/data_memory[43]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[43]</obj_property>
+         <obj_property name="ObjectShortName">data_memory[43]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mips_pipelined_test/uut/MEM_stage/data_mem_inst/data_memory[44]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[44]</obj_property>
+         <obj_property name="ObjectShortName">data_memory[44]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mips_pipelined_test/uut/MEM_stage/data_mem_inst/data_memory[45]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[45]</obj_property>
+         <obj_property name="ObjectShortName">data_memory[45]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mips_pipelined_test/uut/MEM_stage/data_mem_inst/data_memory[46]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[46]</obj_property>
+         <obj_property name="ObjectShortName">data_memory[46]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mips_pipelined_test/uut/MEM_stage/data_mem_inst/data_memory[47]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[47]</obj_property>
+         <obj_property name="ObjectShortName">data_memory[47]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mips_pipelined_test/uut/MEM_stage/data_mem_inst/data_memory[48]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[48]</obj_property>
+         <obj_property name="ObjectShortName">data_memory[48]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mips_pipelined_test/uut/MEM_stage/data_mem_inst/data_memory[49]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[49]</obj_property>
+         <obj_property name="ObjectShortName">data_memory[49]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mips_pipelined_test/uut/MEM_stage/data_mem_inst/data_memory[50]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[50]</obj_property>
+         <obj_property name="ObjectShortName">data_memory[50]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mips_pipelined_test/uut/MEM_stage/data_mem_inst/data_memory[51]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[51]</obj_property>
+         <obj_property name="ObjectShortName">data_memory[51]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mips_pipelined_test/uut/MEM_stage/data_mem_inst/data_memory[52]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[52]</obj_property>
+         <obj_property name="ObjectShortName">data_memory[52]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mips_pipelined_test/uut/MEM_stage/data_mem_inst/data_memory[53]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[53]</obj_property>
+         <obj_property name="ObjectShortName">data_memory[53]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mips_pipelined_test/uut/MEM_stage/data_mem_inst/data_memory[54]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[54]</obj_property>
+         <obj_property name="ObjectShortName">data_memory[54]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mips_pipelined_test/uut/MEM_stage/data_mem_inst/data_memory[55]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[55]</obj_property>
+         <obj_property name="ObjectShortName">data_memory[55]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mips_pipelined_test/uut/MEM_stage/data_mem_inst/data_memory[56]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[56]</obj_property>
+         <obj_property name="ObjectShortName">data_memory[56]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mips_pipelined_test/uut/MEM_stage/data_mem_inst/data_memory[57]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[57]</obj_property>
+         <obj_property name="ObjectShortName">data_memory[57]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mips_pipelined_test/uut/MEM_stage/data_mem_inst/data_memory[58]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[58]</obj_property>
+         <obj_property name="ObjectShortName">data_memory[58]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mips_pipelined_test/uut/MEM_stage/data_mem_inst/data_memory[59]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[59]</obj_property>
+         <obj_property name="ObjectShortName">data_memory[59]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mips_pipelined_test/uut/MEM_stage/data_mem_inst/data_memory[60]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[60]</obj_property>
+         <obj_property name="ObjectShortName">data_memory[60]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mips_pipelined_test/uut/MEM_stage/data_mem_inst/data_memory[61]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[61]</obj_property>
+         <obj_property name="ObjectShortName">data_memory[61]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mips_pipelined_test/uut/MEM_stage/data_mem_inst/data_memory[62]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[62]</obj_property>
+         <obj_property name="ObjectShortName">data_memory[62]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/mips_pipelined_test/uut/MEM_stage/data_mem_inst/data_memory[63]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[63]</obj_property>
+         <obj_property name="ObjectShortName">data_memory[63]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/mips_pipelined_test/uut/reset_in" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset_in</obj_property>
+      <obj_property name="ObjectShortName">reset_in</obj_property>
+   </wvobject>
+</wave_config>
